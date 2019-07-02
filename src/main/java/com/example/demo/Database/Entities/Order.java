@@ -1,9 +1,8 @@
-package com.example.demo.Entities;
+package com.example.demo.Database.Entities;
 
 
 import javax.persistence.*;
 import java.sql.Date;
-import java.util.List;
 
 @Entity
 @Table(name = "orders")
@@ -55,4 +54,6 @@ public class Order {
 
     public Order() {
     }
+
+   
 }

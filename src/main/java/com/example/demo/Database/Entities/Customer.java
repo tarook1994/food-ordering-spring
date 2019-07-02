@@ -1,4 +1,4 @@
-package com.example.demo.Entities;
+package com.example.demo.Database.Entities;
 
 
 import javax.persistence.*;
@@ -21,6 +21,8 @@ public class Customer {
 
     @OneToMany(mappedBy = "customer",  fetch = FetchType.EAGER)
     private List<Order> orders;
+
+
     public int getId() {
         return id;
     }
@@ -57,6 +59,7 @@ public class Customer {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+
     }
 
     @Override
@@ -71,5 +74,13 @@ public class Customer {
     }
 
     public Customer() {
+    }
+
+    public List<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
     }
 }

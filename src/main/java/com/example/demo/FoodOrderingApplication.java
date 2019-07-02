@@ -1,7 +1,7 @@
 package com.example.demo;
 
-import com.example.demo.Entities.Customer;
-import com.example.demo.Entities.Order;
+import com.example.demo.Database.Entities.Customer;
+import com.example.demo.Database.Entities.Order;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.springframework.boot.SpringApplication;
